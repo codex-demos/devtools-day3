@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debugging Exercise: Secret Messages Part 2</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .instructions {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="instructions">
+      <h1>Debugging Exercise: Capture Secret Messages Part 2</h1>
+      <h2>Objective</h2>
+      <p>
+        Use Google Developer Tools to capture secret messages from a deployed
+        website. This exercise is designed to help you understand and utilize
+        breakpoints in JavaScript debugging.
+      </p>
+      <h2>Instructions</h2>
+      <ol>
+        <li>
+          Open Google Developer Tools (right-click on the page and select
+          "Inspect" or use `Ctrl+Shift+I`/`Cmd+Option+I`).
+        </li>
+        <li>Navigate to the "Sources" tab in the Developer Tools.</li>
+        <li>
+          Find the <code>script.js</code> file in the file explorer within the
+          "Sources" tab.
+        </li>
+        <li>
+          Set breakpoints at the lines where
+          <code>fetchSecretMessage</code> function calls are made.
+        </li>
+        <li>
+          Interact with the website as needed to trigger the JavaScript code
+          execution.
+        </li>
+        <li>
+          When each breakpoint is hit, capture the secret message displayed in
+          the source local scope window.
+        </li>
+        <li>There are 10 secret messages corresponding to tasks 11-20.</li>
+        <li>You may have to skip over errors to continue seeing output</li>
+      </ol>
+      <h2>Assignment Submission</h2>
+      <p>
+        Create a GitHub repository with a README.md file. In the README, list
+        all 10 secret messages along with their corresponding task numbers.
+        Submit the link to your GitHub repository.
+      </p>
+    </div>
+    <div id="messageContainer"></div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
